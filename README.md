@@ -5,11 +5,11 @@ Ce projet consistait a créer deux scripts shell. L'un devait être un script qu
 ## Script monitoring
 
 ## Script syncronisation
-###Dépendances : 
+### Dépendances : 
 1. cryptsetup : outil permettant notamment de ouvrir/fermer une partition crypté 
 1. mount/umount : permet de monter/démonter un device
 1. rsync : permet la syncronisation de deux dossiers
 
-###Options
+### Options
 1. --help : Affiche l'utilisation correcte de la commande
 1. --umountall : Permet de démonter les deux conteneurs
