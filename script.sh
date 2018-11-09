@@ -1,8 +1,9 @@
 #!/bin/bash
 #
+# Projet Système ESIEA 3A CFA 2018
+# Fait par Nathan CHEVALIER et Killian LETISSIER
 #
-
-#
+# Script permettant de syncroniser un device chiffré avec un container chiffré 
 #
 
 # Commands
@@ -86,7 +87,7 @@ function cmount {
 
 # Custom unmount function
 function cumount {
-	${_umnt} -l /mnt/$1 && echo "Successfuly unmounted"
+	${_umnt} /mnt/$1 && echo "Successfuly unmounted"
 	cclose $1
 }
 
@@ -115,10 +116,12 @@ echo "1) ${_nameMountedDocker} -> ${_nameMountedDevice} [1]"
 echo "2) ${_nameMountedDevice} -> ${_nameMountedDocker} [2]"
 echo "3) Quit [3]"
 read s
+echo
 case $s in
   1) ${_rsync} --progress -raz --delete /mnt/${_nameMountedDocker}/ /mnt/${_nameMountedDevice} && echo "Transfert finished";;
   2) ${_rsync} --progress -raz --delete /mnt/${_nameMountedDevice}/ /mnt/${_nameMountedDocker} && echo "Transfert finished";;
 esac
+echo
 
 echo "Do you want to close ${_nameMountedDocker}?"
 echo "1) Yes"
