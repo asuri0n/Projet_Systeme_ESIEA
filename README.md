@@ -1,5 +1,5 @@
-# Projet ESIEA Système d'Exploitation
-Projet réalisé par Nathan CHEVALIER & Killian LETISSIER lors de l'année 2018-2019
+# Projet ESIEA Système d'Exploitation 3A CFA 2018-2018
+Projet réalisé par Nathan CHEVALIER & Killian LETISSIER.
 Ce projet consistait à créer deux scripts Shell. L'un devait être un script qui permettait d'avoir des informations utiles à propos du système (Script monitoring) comme les erreurs au démarrage, mais aussi de multiples caractérique de la machine. Le second consistait à synchroniser un conteneur veracrypt avec un disque crypté.
 
 ## Script monitoring
